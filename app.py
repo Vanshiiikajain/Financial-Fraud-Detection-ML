@@ -565,7 +565,7 @@ for w in range(1, 7):
         messages.append("Recall drop detected")
 
     if (
-        baseline["F1"] - monitor.loc[w, "F1"]
+        baseline["F1"] - monitor.loc[w, "F1-score"]
     ) > 0.30 * baseline["F1"]:
         messages.append("F1 performance drop detected")
 
